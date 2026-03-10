@@ -1,0 +1,16 @@
+langgraph
+langchain
+langchain-google-genai
+langchain-groq
+python-dotenv
+pandas
+tavily-python
+
+# New
+fastapi
+uvicorn
+supabase
+python-jose[cryptography]
+python-multipart
+pydantic
+pydantic[email]

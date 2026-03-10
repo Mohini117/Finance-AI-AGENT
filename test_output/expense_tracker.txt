@@ -1,0 +1,68 @@
+
+==================================================
+User: Categorize my spending please
+
+[Orchestrator] Routing to → expense_tracker
+
+Agent Response:
+Hello there! Let's take a look at your recent transactions and get them all organized for you. It's great you're keeping track of your spending!
+
+Here's a breakdown of your expenses:
+
+### 1. Categorized Transactions
+
+I've gone through each transaction and assigned it to one of our categories:
+
+*   **2024-01-01:** Swiggy Order (450) - **Food**
+*   **2024-01-02:** Uber Ride (180) - **Transport**
+*   **2024-01-03:** Amazon Shopping (2300) - **Shopping**
+*   **2024-01-04:** Netflix (199) - **Subscriptions**
+*   **2024-01-05:** Zomato Order (380) - **Food**
+*   **2024-01-06:** Big Bazaar (1200) - **Shopping**
+*   **2024-01-07:** Spotify (119) - **Subscriptions**
+*   **2024-01-08:** Swiggy Order (520) - **Food**
+*   **2024-01-09:** Ola Ride (95) - **Transport**
+*   **2024-01-10:** Pharmacy (340) - **Health**
+*   **2024-01-11:** Flipkart Shopping (1800) - **Shopping**
+*   **2024-01-12:** Netflix (199) - **Subscriptions**
+*   **2024-01-13:** Zomato Order (420) - **Food**
+*   **2024-01-14:** Big Bazaar (950) - **Shopping**
+*   **2024-01-15:** Spotify (119) - **Subscriptions**
+*   **2024-01-16:** Swiggy Order (480) - **Food**
+*   **2024-01-17:** Uber Ride (150) - **Transport**
+*   **2024-01-18:** Amazon Shopping (2100) - **Shopping**
+*   **2024-01-19:** Netflix (199) - **Subscriptions**
+*   **2024-01-20:** Zomato Order (390) - **Food**
+
+### 2. Total Spent Per Category
+
+Here's how much you've spent in each category:
+
+*   **Shopping:** 8350
+*   **Food:** 2640
+*   **Subscriptions:** 835
+*   **Transport:** 425
+*   **Health:** 340
+*   **Entertainment:** 0
+*   **Other:** 0
+
+### 3. Top 3 Spending Categories
+
+Based on your spending, your top 3 categories are:
+
+1.  **Shopping:** 8350
+2.  **Food:** 2640
+3.  **Subscriptions:** 835
+
+### 4. Flagged Transactions
+
+I've flagged a few transactions that are unusually large compared to your typical daily expenses. These are all related to shopping, which often involves higher amounts:
+
+*   **2024-01-03:** Amazon Shopping (2300)
+*   **2024-01-06:** Big Bazaar (1200)
+*   **2024-01-11:** Flipkart Shopping (1800)
+*   **2024-01-18:** Amazon Shopping (2100)
+
+It looks like you've had quite a bit of online and grocery shopping this period!
+
+Let me know if you'd like to analyze these further or track more transactions!

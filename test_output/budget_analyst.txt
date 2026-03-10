@@ -1,0 +1,19 @@
+==================================================
+User: Am I overspending this month?
+
+[Orchestrator] Routing to → budget_analyst
+
+Agent Response:
+Hey there! Let's break down your spending from January 1st to January 24th to see how you're doing on your goal to save ₹10,000 next month.
+
+Here's what I found:
+
+1.  **Total money spent across all transactions:** You've spent a total of **₹14,429** in these 24 days.     
+2.  **Average daily spend:** Your average daily spend during this period is **₹601.21**.
+3.  **Which category is eating the most budget:** By far, your **Shopping** category (including Amazon, Flipkart, and Big Bazaar) is consuming the most budget, totaling a significant **₹9,450**.
+    *   Food Delivery (Swiggy, Zomato): ₹3,140
+    *   Subscriptions (Netflix, Spotify): ₹954
+    *   Transportation (Uber, Ola): ₹545
+    *   Health/Pharmacy: ₹340
+4.  **A simple verdict:** Based on your current spending pattern, you are likely **overspending** if your goal is to save ₹10,000 next month. If you continue spending at this rate, your monthly expenses would be around ₹18,000. This means you'd need an income of at least ₹28,000 just to hit your ₹10,000 savings target.       
+5.  **One specific, actionable recommendation:** Your 'Shopping' category is a huge area for potential savings. To significantly boost your chances of hitting that ₹10,000 savings goal, I strongly recommend implementing a **"no-buy" challenge for all non-essential online shopping (Amazon, Flipkart) next month, and strictly limiting Big Bazaar trips to only essential groceries.** Aim to reduce your shopping spend from ₹9,450 to under ₹2,000. This single change could free up over ₹7,000 directly for your savings!
