@@ -1,24 +1,15 @@
-# Core Frameworks
 langchain>=1.2.10
 langgraph>=1.0.10
 langgraph-checkpoint-sqlite>=3.0.3
-
-# AI & Tools
 langchain-google-genai>=4.2.1
 langchain-groq>=1.0.1
 tavily-python>=0.7.22
-
-# Web & API
 fastapi>=0.135.1
 uvicorn>=0.41.0
 streamlit>=1.54.0
-
-# Database & Auth
 supabase>=2.28.0
 python-jose[cryptography]>=3.5.0
 python-multipart>=0.0.22
-
-# Data & Validation
 pandas>=2.3.3
 pydantic[email]>=2.12.5
 python-dotenv>=1.2.1

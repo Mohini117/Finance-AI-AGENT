@@ -1,8 +1,7 @@
 import axios from 'axios'
+import { API_BASE_URL } from './config'
 
-const BASE_URL = import.meta.env.VITE_API_URL
-
-const api = axios.create({ baseURL: BASE_URL })
+const api = axios.create({ baseURL: API_BASE_URL })
 
 const redirectToLogin = () => {
   localStorage.clear()
@@ -38,7 +37,7 @@ export const getTransactions    = ()           => api.get('/transactions/')
 
 export const sendMessage = async (sessionId, message, userGoal = '') => {
   const token = localStorage.getItem('access_token')
-  const response = await fetch(`${BASE_URL}/chat/message`, {
+  const response = await fetch(`${API_BASE_URL}/chat/message`, {
     method : 'POST',
     headers: {
       'Content-Type' : 'application/json',
@@ -69,7 +68,7 @@ export const getPlanHistory = () =>
 
 export const sendPlanMessage = async (sessionId, message) => {
   const token = localStorage.getItem('access_token')
-  const response = await fetch(`${BASE_URL}/plan/chat`, {
+  const response = await fetch(`${API_BASE_URL}/plan/chat`, {
     method : 'POST',
     headers: {
       'Content-Type' : 'application/json',

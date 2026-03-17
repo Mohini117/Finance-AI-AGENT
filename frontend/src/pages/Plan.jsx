@@ -23,12 +23,12 @@ import {
 } from 'recharts'
 import MarkdownMessage from '../components/MarkdownMessage'
 import { APP_NAME } from '../lib/branding'
-import { getLatestPlan, sendPlanMessage } from '../lib/api'
+import { API_BASE_URL } from '../lib/config'
+import { sendPlanMessage } from '../lib/api'
 import { consumeSSE } from '../lib/sse'
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 const token = () => localStorage.getItem('access_token')
 
 /** Key under which the current plan is cached in localStorage for persistence across reloads. */
@@ -518,7 +518,7 @@ export default function Plan() {
   async function createNewSession(isSilent = false) {
     try {
       setSessionLoading(true)
-      const res = await fetch(`${API}/chat/sessions`, {
+      const res = await fetch(`${API_BASE_URL}/chat/sessions`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${token()}` },
       })
@@ -556,12 +556,12 @@ export default function Plan() {
 
   async function loadLatestPlan(sid) {
     try {
-      const res = await fetch(`${API}/plan/latest?session_id=${sid}`, {
+      const res = await fetch(`${API_BASE_URL}/plan/latest?session_id=${sid}`, {
         headers: { Authorization: `Bearer ${token()}` },
       })
       if (!res.ok) return
       const data = await res.json()
-      const planData = data?.plan?.plan_data || null
+      const planData = data?.plan?.plan || data?.plan?.plan_data || null
       if (planData) setPlan(planData)
     } catch {
       // no-op — localStorage cache covers this case
@@ -570,7 +570,7 @@ export default function Plan() {
 
   async function loadSessionMessages(sid) {
     try {
-      const res = await fetch(`${API}/chat/sessions/${sid}/messages`, {
+      const res = await fetch(`${API_BASE_URL}/chat/sessions/${sid}/messages`, {
         headers: { Authorization: `Bearer ${token()}` },
       })
       if (!res.ok) return

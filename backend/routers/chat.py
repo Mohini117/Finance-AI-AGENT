@@ -317,6 +317,5 @@ async def send_message(body: MessageRequest, user=Depends(get_current_user)):
         headers={
             "Cache-Control":     "no-cache",
             "X-Accel-Buffering": "no",       # Prevent nginx from buffering SSE
-            "Access-Control-Allow-Origin": "*",
         },
     )
