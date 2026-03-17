@@ -5,7 +5,7 @@
 ### A production-grade, multi-agent AI system for personal finance management
 ### — expense tracking · budget analysis · salary planning · real-time investment guidance —
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Vercel-black?style=for-the-badge)](https://finance-ai-agent-rose.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Render-black?style=for-the-badge)](https://finance-ai-agent-web.onrender.com)
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
@@ -419,7 +419,7 @@ print(result['response'])
 
 ## 🌐 Live Demo
 
-**[https://finance-ai-agent-rose.vercel.app](https://finance-ai-agent-rose.vercel.app)**
+**[https://finance-ai-agent-web.onrender.com](https://finance-ai-agent-web.onrender.com)**
 
 Use the sample CSV from `data/sample_transactions.csv` to explore the full feature set.
 
