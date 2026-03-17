@@ -33,11 +33,12 @@ services:
       - key: LANGCHAIN_PROJECT
         sync: false
 
-  - type: static
+  - type: web
     name: finance-ai-agent-web
+    runtime: static
     rootDir: frontend
     buildCommand: npm ci && npm run build
-    staticPublishPath: dist
+    staticPublishPath: ./frontend/dist
     pullRequestPreviewsEnabled: false
     envVars:
       - key: VITE_SUPABASE_URL
